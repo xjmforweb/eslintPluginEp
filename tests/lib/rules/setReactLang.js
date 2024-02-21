@@ -34,9 +34,15 @@ ruleTester.run("lang", rule, {
   ],
 
   invalid: [
-    // {
-      // code: ``,
-      // errors: [{ message: "Fill me in.", type: "Me too" }],
-    // },
+    {
+      code: `<span>测试</span>`,
+      output: `<span>{t('es.test')}</span>`,
+      errors: [{ messageId: "err2" }],
+    },
+    {
+      code: `<span title="测试"></span>`,
+      output: `<span title={t('es.test')}></span>`,
+      errors: [{ messageId: "err1" }],
+    },
   ],
 });
