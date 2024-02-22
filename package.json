@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "fs": "^0.0.1-security",
-    "requireindex": "^1.2.0"
+    "requireindex": "^1.2.0",
+    "vue-eslint-parser": "^9.4.2"
   },
   "devDependencies": {
     "eslint": "^8.19.0",

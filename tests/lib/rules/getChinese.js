@@ -16,16 +16,14 @@ const rule = require("../../../lib/rules/getChinese"),
 // Tests
 //------------------------------------------------------------------------------
 
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester({
+    parser: require.resolve('vue-eslint-parser'),
+    parserOptions: { ecmaVersion: 2015 },
+});
 ruleTester.run("lang", rule, {
     valid: [
-        // give me some code that won't trigger a warning
+        `<span>test</span>    `
     ],
 
-    invalid: [
-        {
-            code: "",
-            errors: [{ message: "Fill me in.", type: "Me too" }],
-        },
-    ],
+    invalid: [],
 });
