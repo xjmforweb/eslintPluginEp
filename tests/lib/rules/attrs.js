@@ -40,6 +40,7 @@ ruleTester.run("attrs", rule, {
     },
     {
       code: `<span a="1" b="2" c="3" d="4"></span>`,
+      options: [{ max: 2 }],
       output: `<span
   a="1"
   b="2"
