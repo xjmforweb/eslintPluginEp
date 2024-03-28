@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-ep",
-  "version": "0.0.0",
-  "description": "epayment",
+  "version": "1.0.0",
+  "description": "",
   "keywords": [
     "eslint",
     "eslintplugin",
