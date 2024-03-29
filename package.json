@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ep",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [
     "eslint",
@@ -30,6 +30,10 @@
     "mocha": "^10.0.0",
     "npm-run-all": "^4.1.5"
   },
+  "files": [
+    "utils",
+    "lib"
+  ],
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
   },
