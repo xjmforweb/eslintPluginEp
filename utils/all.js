@@ -1,3 +1,3 @@
 module.exports = {
-  "测试": "es.test"
+  "测试": "es.test",
 }

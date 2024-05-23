@@ -33,7 +33,7 @@ ruleTester.run("lang", rule, {
 
   invalid: [
     {
-      code: `<span>测试</span>`,
+      code: `<span>   测试</span>`,
       output: `<span>{t('es.test')}</span>`,
       errors: [{ messageId: "err2" }],
     },
